@@ -4,9 +4,11 @@
     box-sizing: border-box;
     font-family:  'poppins', sans-serif;
 }
+
+
 body{
     color: white;
-    background: black;
+    background:black;
 }
 .header{
     position: fixed;
@@ -817,12 +819,12 @@ body{
 
    }
    .skills-container .skills-box {
-    flex: 1 15rem;
+    flex: 1 5rem;
     background: var(--snd-bg-color);
     padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
+ 
     text-align: center;
-    border:1px solid cyan;
+    border:1px solid gray;
     transition: .5d=s ease;
    
    
@@ -857,4 +859,73 @@ body{
      .like span{
       color: cyan;
      }
+     @media (max-width:1024px) {
+      .container{
+        background-color: black;
+      }
+     }
+     @media (max-width:767px) {
+      .container{
+        background-color: black;
+      }
+     }
+     @media (max-width:px) {
+      .container{
+        background-color: black;
+      }
+     }
+     nav{
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: black;
+      position: relative;
+      height: 70px;
+
+     }
+     nav ul{
+      display: flex;
+      gap: 30px;
+      align-items: center;
+
+     }
+     nav ul li{
+      list-style-type: none;
+
+     }nav ul li a{
+      text-decoration: none;
+      color: white;
+      
+     }
+     .menu-icon i{
+      color: white;
+      font-size: 30px;
      
+      
+     }
+     .menu-icon{
+      display: none;
+     }
+     @media  (max-width:600px){
+      nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: blue;
+        gap: 0;
+        overflow: hidden;
+      }
+     }
+     nav ul li{
+      padding: 20px;
+
+     }#menulist{
+      transition: all 0.5s;
+     }
+     .menu-icon{
+      display: block;
+     }

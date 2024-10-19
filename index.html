@@ -13,16 +13,22 @@
 
 </head>
 <body>
+  <nav>
     <header class="header">
         <a href="#" class="logo">portfolio</a>
         <div class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">portfolio</a>
-            <a href="#">Contact</a>
+          <ul id="menuList">
+           <li> <a href="#">Home</a></li>
+           <li><a href="#">About</a></li> 
+           <li><a href="#">Skills</a></li> 
+           <li><a href="#">portfolio</a></li> 
+           <li></li>
+        </div>
+        <div class="menu-icon">
+           onclick="toggleMenu()">
         </div>
     </header>
+  </nav>
     
     <section class="home">
         <div class="home-content">
@@ -94,6 +100,11 @@
 
             <h3>WORDPRESS</h3>
         </div>
+         <div class="skills-box">
+            <i class='bx bxl-figma'></i>
+
+            <h3>FIGMA</h3>
+        </div>
         <div class="skills-box">
             <i class="fa-brands fa-html5" style="color: white;"></i>
 
@@ -104,11 +115,7 @@
 
             <h3>HTML5/CSS</h3>
         </div>
-        <div class="skills-box">
-            <i class='bx bxl-figma'></i>
-
-            <h3>FIGMA</h3>
-        </div>
+       
     </div>
    </sectio>
   
