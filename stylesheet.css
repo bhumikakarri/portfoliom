@@ -167,11 +167,10 @@ body{
 .btn-box:hover{
     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan,0 0 100px cyan ,0 0 200px cyan
 }.about{
-    display: grid;
-   grid-template-columns: repeat(2,1fr);
-   align-items: center;
-   gap: 1.5rem;
-
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap:80px;
 }
 .about .img img{
     padding-bottom: 20%;
@@ -201,7 +200,8 @@ body{
     line-height: 1.4;
     margin-bottom: 4rem;
 }.about-text{
-    margin-left: 200px;
+
+ margin-top: 100px;
 }
 #services{
     color: aliceblue;
@@ -242,13 +242,7 @@ body{
         padding: 3px;
         margin-left: -130px;
        }
-       body{
-        background-image: url("images/Frame\ 1\ \(5\).jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        overflow-x: hidden;
-       }
+      
     
        @media only screen and (max-width: 1024px){
         .body{
@@ -341,13 +335,13 @@ body{
         border-radius: 2rem;
       }
       .text .my{
-        margin-left: -50px;
+       
       }
      .self2 .data{
-      margin-right: 150px;
+     
      }
      .self2 .location{
-      margin-right: 250px;
+      
       position:relative;
      }
       }
@@ -414,7 +408,7 @@ body{
         border-radius: 2rem;
       }
       .text .my{
-        margin-left: -80px;
+       
       }
       .data .contact{
         height: 350px;
@@ -422,14 +416,14 @@ body{
         background-color: rgba(253, 249, 249, 0.014);
         border: 1px solid rgba(255, 255, 255, 0.13);
         border-radius: 15px;
-        margin-left: 170px;
+    
         margin-top: 30px;
       }
      .self2 .data{
-      margin-left: -180px;
+      
      }
      .self2 .location{
-      margin-left: 200px;
+     
       position:relative;
      }
       }
@@ -530,7 +524,7 @@ body{
       bottom: 0;
       height: 0;
       width: 100%;
-      background-image:linear-gradient(to right,#F05269,#C570EA,#3BAFEA);
+      background-image:linear-gradient(to right,BLACK);
       transition: 0.4s ease;
       z-index: -1;
     }
@@ -540,7 +534,8 @@ body{
       justify-content: space-evenly;
     }
        .circle2{
-        background-image:linear-gradient(to right,#F05269,#C570EA,#3BAFEA);
+        background-image:linear-gradient(to right,CYAN,GRAY);
+        
         height: 260px;
         width: 260px;
         border-radius: 50%;
@@ -551,6 +546,7 @@ body{
         animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
         animation-delay: .5s, 3.1s; 
         opacity: 0;
+       
         }   
       @keyframes zoomIn{
         0%{
@@ -576,42 +572,17 @@ body{
       }
    
     .circle1{
-        background-image:linear-gradient(to right,#F05269,#C570EA,#3BAFEA);
+        background-image:linear-gradient(to right,CYAN,gray);
         height: 260px;
         width: 260px;
       
         margin-top: 120px;
-        margin-left: 100px;
+       
         padding: 3px;
 
        }
-       .circle1{
-        animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-        animation-delay: .5s, 3.1s; 
-        opacity: 0;
-        }   
-      @keyframes zoomIn{
-        0%{
-          opacity: 0;
-          transform: scale(0);
-        }
-        100%{
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
       
-      @keyframes floatImage{
-        0%{
-          transform: translateY(0);
-        }
-        50%{
-          transform: translateY(-35px);
-        }
-        100%{
-          transform: translateY(0);
-        }
-      }
+      
       h2 {
         color: white;
         font-size: 50px;
@@ -683,7 +654,7 @@ body{
         left:0;
         width:100%;
         height:100%;
-        background:linear-gradient(blue,blue);
+        background:linear-gradient(blue,);
         border: 2px solid rgba(212, 12, 122, 0.678);
         color: white;
         display:flex;
@@ -700,15 +671,15 @@ body{
       .filter{
         height: 80px;
         width: 530px;
-        background-color: rgba(255, 255, 255, 0.055);
+        background-color: rgba(159, 21, 21, 0.055);
         border: 2px solid rgba(255, 255, 255, 0.13);
         border-radius: 50px;
         margin-top: 60px;
-       justify-content: center;
+        margin-left: 350px;
        text-align: center;
        align-items: center;
        box-shadow: 0  0 20px cyan;
-       margin-left: 330px;
+      
       }
 
       
@@ -754,7 +725,7 @@ body{
         background-color: rgba(253, 249, 249, 0.014);
         border: 1px solid rgba(255, 255, 255, 0.13);
         border-radius: 15px;
-        margin-left: 170px;
+       
         margin-top: 30px;
       }
       .sub{
@@ -847,6 +818,7 @@ body{
    }
      .skills h2{
       text-align: center;
+      font-size: 50px;
 
      }
      .skills span{
@@ -875,10 +847,10 @@ body{
       }
      }
      nav{
-      padding: 10px 30px;
+      
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      
       background: black;
       position: relative;
       height: 70px;
@@ -886,8 +858,9 @@ body{
      }
      nav ul{
       display: flex;
-      gap: 30px;
-      align-items: center;
+     
+    align-items: center;
+    float: right;
 
      }
      nav ul li{
@@ -901,6 +874,9 @@ body{
      .menu-icon i{
       color: white;
       font-size: 30px;
+      
+
+    
      
       
      }
@@ -915,13 +891,14 @@ body{
         right: 0;
         flex-direction: column;
         text-align: center;
-        background: blue;
+        background: black;
         gap: 0;
         overflow: hidden;
       }
      }
      nav ul li{
-      padding: 20px;
+     padding:6px;
+     float: right;
 
      }#menulist{
       transition: all 0.5s;
@@ -929,3 +906,10 @@ body{
      .menu-icon{
       display: block;
      }
+     .self2{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+       gap:1%;
+     }
+     
