@@ -1086,6 +1086,10 @@ body {
   font-weight: 600;
   color:#fff;
 }
+.sub-title span{
+  color: cyan;
+}
+
 .tab-titles{
   display: flex;
   margin: 20px 0 40px;
@@ -1101,7 +1105,7 @@ body {
   content:'';
   width:0;
   height: 3px;
-  background: #5195bf;
+  background: CYAN;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -1113,10 +1117,10 @@ body {
 .tab-contents ul li{
   list-style:none;
   margin:10px 0;
-  margin-left:-20px;
+  
 }
 .tab-contents ul li span{
-  color:#7a7fda;
+  color:CYAN;
   font-size:14px;
 }
 .tab-contents{
@@ -1278,4 +1282,7 @@ li i {
   li i {
     font-size: 20px;
   }
+}
+h2{
+  color: white;
 }
