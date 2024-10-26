@@ -46,5 +46,5 @@ var typed = new Typed(".multiple-text", {
           button.classList.remove('active');
         }
       }
-    }
+    }z
   
